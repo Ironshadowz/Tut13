@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact information</h1>
+    <br>
+    <form data-th-action="@{/contact}" method="post" data-th-object="${contact}">
+
+        <h3>Name</h3>
+        <input type="text" data-th-field="*{name}">
+
+        <h3>Email</h3>
+        <input type="text" data-th-field="*{email}">
+
+        <h3>Job</h3>
+        <input type="text" data-th-field="*{job}">
+
+        <h3>Phone Number</h3>
+        <input type="text" data-th-field="*{phoneNumber}">
+
+        <br><hr>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
